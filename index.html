@@ -8,41 +8,41 @@ pre > code {
   overflow-x: auto;
 }
 </style>
-<input type="text" placeholder="IPA tones" id="IPA" autocomplete="off"/>
+<input type="text" placeholder="IPA tones" id="tones" autocomplete="off"/>
 <button class="smallbutton" onclick="enter('\u02E9')">1</button>
 <button class="smallbutton" onclick="enter('\u02E8')">2</button>
 <button class="smallbutton" onclick="enter('\u02E7')">3</button>
 <button class="smallbutton" onclick="enter('\u02E6')">4</button>
 <button class="smallbutton" onclick="enter('\u02E5')">5</button>
-<button onclick="document.getElementById('IPA').value = ''" style="color:red">X</button>
+<button onclick="document.getElementById('tones').value = ''" style="color:red">X</button>
 <button onclick="copytext()" style="color:blue">C</button>
 <script>
 function enter(character){
-document.getElementById("IPA").value+=character;
-document.getElementById("IPA").focus();
+document.getElementById("tones").value+=character;
+document.getElementById("tones").focus();
 }
 function copytext() {
-  var copyText = document.getElementById("IPA");
+  var copyText = document.getElementById("tones");
   copyText.select();
   copyText.setSelectionRange(0, 99999)
   document.execCommand("copy");
 }
 </script>
-<pre><code>&lt;input type="text" placeholder="IPA tones" id="IPA" autocomplete="off"/&gt;
+<pre><code>&lt;input type="text" placeholder="IPA tones" id="tones" autocomplete="off"/&gt;
 &lt;button class="smallbutton" onclick="enter('\u02E9')"&gt;1&lt;/button&gt;
 &lt;button class="smallbutton" onclick="enter('\u02E8')"&gt;2&lt;/button&gt;
 &lt;button class="smallbutton" onclick="enter('\u02E7')"&gt;3&lt;/button&gt;
 &lt;button class="smallbutton" onclick="enter('\u02E6')"&gt;4&lt;/button&gt;
 &lt;button class="smallbutton" onclick="enter('\u02E5')"&gt;5&lt;/button&gt;
-&lt;button onclick="document.getElementById('IPA').value = ''" style="color:red"&gt;X&lt;/button&gt;
+&lt;button onclick="document.getElementById('tones').value = ''" style="color:red"&gt;X&lt;/button&gt;
 &lt;button onclick="copytext()" style="color:blue"&gt;C&lt;/button&gt;
 &lt;script&gt;
 function enter(character){
-document.getElementById("IPA").value+=character;
-document.getElementById("IPA").focus();
+document.getElementById("tones").value+=character;
+document.getElementById("tones").focus();
 }
 function copytext() {
-  var copyText = document.getElementById("IPA");
+  var copyText = document.getElementById("tones");
   copyText.select();
   copyText.setSelectionRange(0, 99999)
   document.execCommand("copy");
